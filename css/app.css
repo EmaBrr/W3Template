@@ -142,40 +142,40 @@ header .topnav .icon i {
   background-size: cover;
   background-position: center;
   background-color: black;
+}
+
+.main__introduction .inside__boxcenter {
+  height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main__introduction .inside__box {
-  width: 95%;
-}
-
-.main__introduction .inside__box h1 {
+.main__introduction .inside__boxcenter .inside__box h1 {
   color: white;
   font-size: 40px;
-  padding: 20px 80px 20px 20px;
+  padding: 20px 80px 20px 30px;
   line-height: 65px;
   font-family: "Noto Sans JP", sans-serif;
 }
 
-.main__introduction .inside__box h2 {
+.main__introduction .inside__boxcenter .inside__box h2 {
   color: white;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
-  padding: 20px 80px 20px 20px;
+  padding: 20px 80px 20px 30px;
   font-size: 18px;
   letter-spacing: 1.5px;
   line-height: 30px;
 }
 
-.main__introduction .inside__box .btn {
+.main__introduction .inside__boxcenter .inside__box .btn {
   width: 100%;
-  padding: 20px 80px 20px 20px;
+  padding: 20px 80px 20px 30px;
 }
 
-.main__introduction .inside__box .btn button {
-  width: 250px;
+.main__introduction .inside__boxcenter .inside__box .btn button {
+  width: 270px;
   height: 60px;
   font-size: 18px;
   background-color: white;
@@ -183,4 +183,15 @@ header .topnav .icon i {
   font-family: "Raleway", sans-serif;
   color: black;
   font-weight: 600;
+}
+
+.main__introduction .icon__row {
+  padding: 0px 80px 20px 30px;
+}
+
+.main__introduction .icon__row a {
+  color: white;
+  opacity: 0.5;
+  padding: 2px;
+  font-size: 18px;
 }
