@@ -47,15 +47,16 @@ header {
   background-position: center;
   background-color: black;
   .inside__boxcenter {
-    height: 95vh;
+    height: 93vh;
     display: flex;
     justify-content: center;
     align-items: center;
     .inside__box {
+      margin-top: 60px;
+      padding: 0px 80px 0px 30px;
       h1 {
         color: white;
         font-size: 40px;
-        padding: 20px 80px 20px 30px;
         line-height: 65px;
         font-family: $noto;
       }
@@ -63,14 +64,13 @@ header {
         color: white;
         font-family: $raleway;
         font-weight: 600;
-        padding: 20px 80px 20px 30px;
         font-size: 18px;
         letter-spacing: 1.5px;
         line-height: 30px;
       }
       .btn {
         width: 100%;
-        padding: 20px 80px 20px 30px;
+        padding: 35px 0px;
         button {
           width: 270px;
           height: 60px;
@@ -80,18 +80,23 @@ header {
           font-family: $raleway;
           color: black;
           font-weight: 600;
+          &:hover {
+            opacity: 0.8;
+          }
         }
       }
     }
   }
   .icon__row {
-    // width: 200px;
-    padding: 0px 80px 20px 30px;
+    padding: 0px 80px 00px 30px;
     a {
         color: white;
         opacity: 0.5;
         padding: 2px;
         font-size: 18px;
+        &:hover {
+          opacity: 0.8;
+        }
     }
   }
 }
