@@ -103,34 +103,53 @@ header {
 header .topnav {
   width: 100%;
   font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header .topnav .logo {
-  padding: 20px;
+header .topnav .hidden {
+  visibility: hidden;
+}
+
+@media (min-width: 600px) {
+  header .topnav .hidden {
+    visibility: visible;
+  }
+}
+
+header .topnav a {
+  height: 60px;
+  padding-top: 20px;
+  width: calc(100% / 7);
+  text-align: center;
   color: black;
   font-weight: 600;
-  text-transform: uppercase;
-  float: left;
+  font-size: 16px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+
+header .topnav a:hover {
+  background-color: #bebebe;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  header .topnav a {
+    width: calc(100% / 6);
+  }
+}
+
+@media (min-width: 600px) {
+  header .topnav .bars {
+    display: none;
+  }
+}
+
+header .topnav i {
   font-size: 17px;
-  letter-spacing: 3px;
-}
-
-header .topnav .logo:hover {
-  background-color: #c7c5c5;
-}
-
-header .topnav .icon {
-  color: black;
-  float: right;
-  padding: 20px;
-}
-
-header .topnav .icon:hover {
-  background-color: #c7c5c5;
-}
-
-header .topnav .icon i {
-  font-size: 17px;
+  padding: 2px;
 }
 
 .main__introduction {
@@ -153,7 +172,14 @@ header .topnav .icon i {
 
 .main__introduction .inside__boxcenter .inside__box {
   margin-top: 60px;
-  padding: 0px 80px 0px 30px;
+  width: 100%;
+  padding: 0px 30px;
+}
+
+@media (min-width: 600px) {
+  .main__introduction .inside__boxcenter .inside__box {
+    padding: 0px 60px;
+  }
 }
 
 .main__introduction .inside__boxcenter .inside__box h1 {
@@ -193,7 +219,13 @@ header .topnav .icon i {
 }
 
 .main__introduction .icon__row {
-  padding: 0px 80px 00px 30px;
+  padding: 0px 0px 0px 30px;
+}
+
+@media (min-width: 600px) {
+  .main__introduction .icon__row {
+    padding: 0px 60px;
+  }
 }
 
 .main__introduction .icon__row a {
