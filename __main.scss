@@ -1,7 +1,5 @@
 header {
   width: 100%;
-  height: 60px;
-  padding: 20px 0px;
   position: fixed;
   overflow: hidden;
   background-color: white;
@@ -9,45 +7,69 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  .topnav {
+  .nav__wrapper {
     width: 100%;
-    font-family: $raleway;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    .hidden {
-      visibility: hidden;
-      @media (min-width: $medium) {
-        visibility: visible;
-      }
-    }
-    a {
-      height: 60px;
-      padding-top: 20px;
-      width: calc(100% / 7);
-      text-align: center;
-      color: black;
+    font-family: $raleway;
+    .logo {
+      text-transform: uppercase;
+      padding: 20px 15px;
       font-weight: 600;
-      font-size: 16px;
-      letter-spacing: 2px;
-      display: inline-block;
+      font-size: 17px;
+      color: black;
+      letter-spacing: 3px;
       &:hover {
         background-color: rgb(190, 190, 190);
-        color: white;
-      }
-      @media (min-width: $medium) {
-        width: calc(100% / 6);
+        @media (max-width: $medium) {
+          pointer-events: none;
+        }
       }
     }
-    .bars {
+    .menu__item {
+      padding: 20px 15px;
+      font-weight: 600;
+      color: black;
+      font-size: 15px;
+      letter-spacing: 1.5px;
+      &:hover {
+        background-color: rgb(190, 190, 190);
+        @media (max-width: $medium) {
+          pointer-events: none;
+        }
+      }
+      i {
+        color: black;
+        padding-right: 7px;
+      }
+    }
+    .hidden {
+      display: none;
+      @media (min-width: $medium) {
+        display: inline-block;
+      }
+    }
+    .hidden__menu {
+      padding: 20px 15px;
+      color: black;
+      &:hover {
+        background-color: rgb(190, 190, 190);
+        @media (max-width: $medium) {
+          pointer-events: none;
+        }
+      }
+      i {
+        color: black;
+        font-size: 17px;
+      }
       @media (min-width: $medium) {
         display: none;
       }
     }
-    i {
-      font-size: 17px;
-      padding: 2px;
-    }
+  }
+  a {
+    color: black;
   }
 }
 
@@ -77,6 +99,10 @@ header {
         font-size: 40px;
         line-height: 65px;
         font-family: $noto;
+        @media (min-width: $medium) {
+          font-size: 55px;
+          padding: 20px 0px;
+        }
       }
       h2 {
         color: white;
@@ -85,6 +111,10 @@ header {
         font-size: 18px;
         letter-spacing: 1.5px;
         line-height: 30px;
+        @media (min-width: $medium) {
+          font-size: 25px;
+          padding: 20px 0px;
+        }
       }
       .btn {
         width: 100%;
@@ -100,6 +130,13 @@ header {
           font-weight: 600;
           &:hover {
             opacity: 0.8;
+            @media (max-width: $medium) {
+              pointer-events: none;
+            }
+          }
+          @media (min-width: $medium) {
+            font-size: 20px;
+            width: 290px;
           }
         }
       }
@@ -117,6 +154,13 @@ header {
       font-size: 18px;
       &:hover {
         opacity: 0.8;
+        padding: 3px;
+        @media (max-width: $medium) {
+          pointer-events: none;
+        }
+      }
+      @media (min-width: $medium) {
+        font-size: 22px;
       }
     }
   }

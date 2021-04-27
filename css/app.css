@@ -89,8 +89,6 @@ h6 {
 
 header {
   width: 100%;
-  height: 60px;
-  padding: 20px 0px;
   position: fixed;
   overflow: hidden;
   background-color: white;
@@ -100,56 +98,94 @@ header {
   align-items: center;
 }
 
-header .topnav {
+header .nav__wrapper {
   width: 100%;
-  font-family: "Raleway", sans-serif;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  font-family: "Raleway", sans-serif;
 }
 
-header .topnav .hidden {
-  visibility: hidden;
-}
-
-@media (min-width: 600px) {
-  header .topnav .hidden {
-    visibility: visible;
-  }
-}
-
-header .topnav a {
-  height: 60px;
-  padding-top: 20px;
-  width: calc(100% / 7);
-  text-align: center;
-  color: black;
+header .nav__wrapper .logo {
+  text-transform: uppercase;
+  padding: 20px 15px;
   font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 2px;
-  display: inline-block;
+  font-size: 17px;
+  color: black;
+  letter-spacing: 3px;
 }
 
-header .topnav a:hover {
+header .nav__wrapper .logo:hover {
   background-color: #bebebe;
-  color: white;
 }
 
-@media (min-width: 600px) {
-  header .topnav a {
-    width: calc(100% / 6);
+@media (max-width: 600px) {
+  header .nav__wrapper .logo:hover {
+    pointer-events: none;
   }
 }
 
+header .nav__wrapper .menu__item {
+  padding: 20px 15px;
+  font-weight: 600;
+  color: black;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+
+header .nav__wrapper .menu__item:hover {
+  background-color: #bebebe;
+}
+
+@media (max-width: 600px) {
+  header .nav__wrapper .menu__item:hover {
+    pointer-events: none;
+  }
+}
+
+header .nav__wrapper .menu__item i {
+  color: black;
+  padding-right: 7px;
+}
+
+header .nav__wrapper .hidden {
+  display: none;
+}
+
 @media (min-width: 600px) {
-  header .topnav .bars {
+  header .nav__wrapper .hidden {
+    display: inline-block;
+  }
+}
+
+header .nav__wrapper .hidden__menu {
+  padding: 20px 15px;
+  color: black;
+}
+
+header .nav__wrapper .hidden__menu:hover {
+  background-color: #bebebe;
+}
+
+@media (max-width: 600px) {
+  header .nav__wrapper .hidden__menu:hover {
+    pointer-events: none;
+  }
+}
+
+header .nav__wrapper .hidden__menu i {
+  color: black;
+  font-size: 17px;
+}
+
+@media (min-width: 600px) {
+  header .nav__wrapper .hidden__menu {
     display: none;
   }
 }
 
-header .topnav i {
-  font-size: 17px;
-  padding: 2px;
+header a {
+  color: black;
 }
 
 .main__introduction {
@@ -189,6 +225,13 @@ header .topnav i {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+@media (min-width: 600px) {
+  .main__introduction .inside__boxcenter .inside__box h1 {
+    font-size: 55px;
+    padding: 20px 0px;
+  }
+}
+
 .main__introduction .inside__boxcenter .inside__box h2 {
   color: white;
   font-family: "Raleway", sans-serif;
@@ -196,6 +239,13 @@ header .topnav i {
   font-size: 18px;
   letter-spacing: 1.5px;
   line-height: 30px;
+}
+
+@media (min-width: 600px) {
+  .main__introduction .inside__boxcenter .inside__box h2 {
+    font-size: 25px;
+    padding: 20px 0px;
+  }
 }
 
 .main__introduction .inside__boxcenter .inside__box .btn {
@@ -218,6 +268,19 @@ header .topnav i {
   opacity: 0.8;
 }
 
+@media (max-width: 600px) {
+  .main__introduction .inside__boxcenter .inside__box .btn button:hover {
+    pointer-events: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .main__introduction .inside__boxcenter .inside__box .btn button {
+    font-size: 20px;
+    width: 290px;
+  }
+}
+
 .main__introduction .icon__row {
   padding: 0px 0px 0px 30px;
 }
@@ -237,4 +300,17 @@ header .topnav i {
 
 .main__introduction .icon__row a:hover {
   opacity: 0.8;
+  padding: 3px;
+}
+
+@media (max-width: 600px) {
+  .main__introduction .icon__row a:hover {
+    pointer-events: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .main__introduction .icon__row a {
+    font-size: 22px;
+  }
 }
