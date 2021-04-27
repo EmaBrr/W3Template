@@ -1,7 +1,6 @@
 header {
   width: 100%;
   position: fixed;
-  overflow: hidden;
   background-color: white;
   z-index: 1;
   display: flex;
@@ -20,6 +19,7 @@ header {
       font-size: 17px;
       color: black;
       letter-spacing: 3px;
+      cursor: pointer;
       &:hover {
         background-color: rgb(190, 190, 190);
         @media (max-width: $medium) {
@@ -27,32 +27,59 @@ header {
         }
       }
     }
-    .menu__item {
-      padding: 20px 15px;
-      font-weight: 600;
-      color: black;
-      font-size: 15px;
-      letter-spacing: 1.5px;
-      &:hover {
-        background-color: rgb(190, 190, 190);
-        @media (max-width: $medium) {
-          pointer-events: none;
-        }
+    .nav {
+      @media (max-width: $medium) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        background-color: rgba(196, 192, 192, 0.938);
+        height: 100vh;
+        text-align: center;
+        padding-top: 60px;
+        transform: translateY(100%);
       }
-      i {
+      .menu__item {
+        padding: 20px 15px;
+        font-weight: 600;
         color: black;
-        padding-right: 7px;
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        display: block;
+        cursor: pointer;
+        @media (max-width: $medium) {
+          font-size: 20px;
+        }
+        &:hover {
+          background-color: rgb(190, 190, 190);
+          @media (max-width: $medium) {
+            pointer-events: none;
+          }
+        }
+        i {
+          color: black;
+          padding-right: 7px;
+        }
+      }
+      .hidden {
+        // display: none;
+        @media (min-width: $medium) {
+          display: inline-block;
+        }
       }
     }
-    .hidden {
-      display: none;
-      @media (min-width: $medium) {
-        display: inline-block;
+    .on {
+      @media (max-width: $medium) {
+        transform: translateY(0%);
+        transition: 1s;
       }
     }
     .hidden__menu {
       padding: 20px 15px;
       color: black;
+      cursor: pointer;
       &:hover {
         background-color: rgb(190, 190, 190);
         @media (max-width: $medium) {

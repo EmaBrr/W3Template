@@ -90,7 +90,6 @@ h6 {
 header {
   width: 100%;
   position: fixed;
-  overflow: hidden;
   background-color: white;
   z-index: 1;
   display: flex;
@@ -113,6 +112,7 @@ header .nav__wrapper .logo {
   font-size: 17px;
   color: black;
   letter-spacing: 3px;
+  cursor: pointer;
 }
 
 header .nav__wrapper .logo:hover {
@@ -125,42 +125,70 @@ header .nav__wrapper .logo:hover {
   }
 }
 
-header .nav__wrapper .menu__item {
+@media (max-width: 600px) {
+  header .nav__wrapper .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-color: rgba(196, 192, 192, 0.938);
+    height: 100vh;
+    text-align: center;
+    padding-top: 60px;
+    transform: translateY(100%);
+  }
+}
+
+header .nav__wrapper .nav .menu__item {
   padding: 20px 15px;
   font-weight: 600;
   color: black;
   font-size: 15px;
   letter-spacing: 1.5px;
+  display: block;
+  cursor: pointer;
 }
 
-header .nav__wrapper .menu__item:hover {
+@media (max-width: 600px) {
+  header .nav__wrapper .nav .menu__item {
+    font-size: 20px;
+  }
+}
+
+header .nav__wrapper .nav .menu__item:hover {
   background-color: #bebebe;
 }
 
 @media (max-width: 600px) {
-  header .nav__wrapper .menu__item:hover {
+  header .nav__wrapper .nav .menu__item:hover {
     pointer-events: none;
   }
 }
 
-header .nav__wrapper .menu__item i {
+header .nav__wrapper .nav .menu__item i {
   color: black;
   padding-right: 7px;
 }
 
-header .nav__wrapper .hidden {
-  display: none;
+@media (min-width: 600px) {
+  header .nav__wrapper .nav .hidden {
+    display: inline-block;
+  }
 }
 
-@media (min-width: 600px) {
-  header .nav__wrapper .hidden {
-    display: inline-block;
+@media (max-width: 600px) {
+  header .nav__wrapper .on {
+    transform: translateY(0%);
+    transition: 1s;
   }
 }
 
 header .nav__wrapper .hidden__menu {
   padding: 20px 15px;
   color: black;
+  cursor: pointer;
 }
 
 header .nav__wrapper .hidden__menu:hover {
