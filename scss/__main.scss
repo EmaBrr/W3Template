@@ -12,6 +12,7 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: $raleway;
+    position: relative;
     .logo {
       text-transform: uppercase;
       padding: 20px 15px;
@@ -23,7 +24,7 @@ header {
       &:hover {
         background-color: rgb(190, 190, 190);
         @media (max-width: $medium) {
-          pointer-events: none;
+          // pointer-events: none;
         }
       }
     }
@@ -55,7 +56,7 @@ header {
         &:hover {
           background-color: rgb(190, 190, 190);
           @media (max-width: $medium) {
-            pointer-events: none;
+            // pointer-events: none;
           }
         }
         i {
@@ -80,10 +81,13 @@ header {
       padding: 20px 15px;
       color: black;
       cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0;
       &:hover {
         background-color: rgb(190, 190, 190);
         @media (max-width: $medium) {
-          pointer-events: none;
+          // pointer-events: none;
         }
       }
       i {
@@ -158,7 +162,7 @@ header {
           &:hover {
             opacity: 0.8;
             @media (max-width: $medium) {
-              pointer-events: none;
+              // pointer-events: none;
             }
           }
           @media (min-width: $medium) {
@@ -183,7 +187,7 @@ header {
         opacity: 0.8;
         padding: 3px;
         @media (max-width: $medium) {
-          pointer-events: none;
+          // pointer-events: none;
         }
       }
       @media (min-width: $medium) {

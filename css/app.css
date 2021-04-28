@@ -103,6 +103,7 @@ header .nav__wrapper {
   justify-content: space-between;
   align-items: center;
   font-family: "Raleway", sans-serif;
+  position: relative;
 }
 
 header .nav__wrapper .logo {
@@ -117,12 +118,6 @@ header .nav__wrapper .logo {
 
 header .nav__wrapper .logo:hover {
   background-color: #bebebe;
-}
-
-@media (max-width: 600px) {
-  header .nav__wrapper .logo:hover {
-    pointer-events: none;
-  }
 }
 
 @media (max-width: 600px) {
@@ -161,12 +156,6 @@ header .nav__wrapper .nav .menu__item:hover {
   background-color: #bebebe;
 }
 
-@media (max-width: 600px) {
-  header .nav__wrapper .nav .menu__item:hover {
-    pointer-events: none;
-  }
-}
-
 header .nav__wrapper .nav .menu__item i {
   color: black;
   padding-right: 7px;
@@ -189,16 +178,13 @@ header .nav__wrapper .hidden__menu {
   padding: 20px 15px;
   color: black;
   cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 header .nav__wrapper .hidden__menu:hover {
   background-color: #bebebe;
-}
-
-@media (max-width: 600px) {
-  header .nav__wrapper .hidden__menu:hover {
-    pointer-events: none;
-  }
 }
 
 header .nav__wrapper .hidden__menu i {
@@ -296,12 +282,6 @@ header a {
   opacity: 0.8;
 }
 
-@media (max-width: 600px) {
-  .main__introduction .inside__boxcenter .inside__box .btn button:hover {
-    pointer-events: none;
-  }
-}
-
 @media (min-width: 600px) {
   .main__introduction .inside__boxcenter .inside__box .btn button {
     font-size: 20px;
@@ -329,12 +309,6 @@ header a {
 .main__introduction .icon__row a:hover {
   opacity: 0.8;
   padding: 3px;
-}
-
-@media (max-width: 600px) {
-  .main__introduction .icon__row a:hover {
-    pointer-events: none;
-  }
 }
 
 @media (min-width: 600px) {
