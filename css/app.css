@@ -384,7 +384,6 @@ header a {
   .main__about .box__about2 .about__box {
     width: calc(100% / 4);
     float: left;
-    top: 0;
   }
 }
 
@@ -471,4 +470,105 @@ header a {
 .main__weknowdesign .box__weknowdesign img {
   width: 100%;
   padding: 10px;
+}
+
+.main__team {
+  width: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+  padding: 100px 50px;
+  display: inline-block;
+}
+
+@media (min-width: 600px) {
+  .main__team {
+    padding: 100px 20px;
+  }
+}
+
+.main__team h1 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 20px 0px;
+}
+
+.main__team h2 {
+  text-align: center;
+  font-size: 15px;
+  padding: 20px 0px;
+}
+
+.main__team .box__teammain {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (min-width: 990px) {
+  .main__team .box__teammain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.main__team .box__teammain .box__team {
+  margin: 15px 0px;
+  box-shadow: 3px 8px 25px rgba(104, 100, 100, 0.4);
+}
+
+@media (min-width: 600px) {
+  .main__team .box__teammain .box__team {
+    width: 48.5%;
+    float: left;
+    margin: 5px 5px;
+  }
+}
+
+@media (min-width: 990px) {
+  .main__team .box__teammain .box__team {
+    width: 23.5%;
+    float: left;
+  }
+}
+
+.main__team .box__teammain .box__team img {
+  width: 100%;
+}
+
+.main__team .box__teammain .box__team h2 {
+  text-align: left;
+  font-size: 20px;
+  padding: 15px 10px;
+  font-weight: 600;
+}
+
+.main__team .box__teammain .box__team h3 {
+  font-size: 15px;
+  padding: 15px 10px;
+  color: #a3a3a3;
+}
+
+.main__team .box__teammain .box__team p {
+  font-size: 15px;
+  padding: 15px 10px;
+  line-height: 30px;
+}
+
+.main__team .box__teammain .box__team button {
+  width: 95%;
+  height: 30px;
+  margin: 10px;
+  background-color: #ececec;
+  border-radius: 3px;
+  box-shadow: 10px grey;
+}
+
+@media (min-width: 990px) {
+  .main__team .box__teammain .box__team button {
+    width: 90%;
+  }
+}
+
+.main__team .box__teammain .box__team button i {
+  padding-right: 5px;
 }

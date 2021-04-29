@@ -242,7 +242,6 @@ header {
       @media (min-width: $medium) {
         width: calc(100% / 4);
         float: left;
-        top: 0;
       }
       i {
         font-size: 65px;
@@ -308,6 +307,82 @@ header {
     img {
       width: 100%;
       padding: 10px;
+    }
+  }
+}
+
+.main__team {
+  width: 100%;
+  font-family: $noto;
+  padding: 100px 50px;
+  display: inline-block;
+  @media (min-width: $medium) {
+    padding: 100px 20px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 20px 0px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 15px;
+    padding: 20px 0px;
+  }
+  .box__teammain {
+    width: 100%;
+    justify-content: center;
+    @media (min-width: $extralarge) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box__team {
+      margin: 15px 0px;
+      box-shadow: 3px 8px 25px rgba(104, 100, 100, 0.4);
+      @media (min-width: $medium) {
+        width: 48.5%;
+        float: left;
+        margin: 5px 5px;
+      }
+      @media (min-width: $extralarge) {
+        width: 23.5%;
+        float: left;
+      }
+      img {
+        width: 100%;
+      }
+      h2 {
+        text-align: left;
+        font-size: 20px;
+        padding: 15px 10px;
+        font-weight: 600;
+      }
+      h3 {
+        font-size: 15px;
+        padding: 15px 10px;
+        color: rgb(163, 163, 163);
+      }
+      p {
+        font-size: 15px;
+        padding: 15px 10px;
+        line-height: 30px;
+      }
+      button {
+        width: 95%;
+        height: 30px;
+        margin: 10px;
+        background-color: rgb(236, 236, 236);
+        border-radius: 3px;
+        box-shadow: 10px grey;
+        @media (min-width: $extralarge) {
+          width: 90%;
+        }
+        i {
+          padding-right: 5px;
+        }
+      }
     }
   }
 }
