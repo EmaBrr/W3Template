@@ -352,54 +352,54 @@ header a {
   display: inline-block;
 }
 
-.main__about .first__box h2 {
+.main__about .box__about1 h2 {
   text-transform: uppercase;
   font-size: 25px;
   font-weight: 900;
   padding: 20px 0px;
 }
 
-.main__about .first__box h3 {
+.main__about .box__about1 h3 {
   font-size: 18px;
   font-weight: 600;
   padding: 20px 0px;
 }
 
-.main__about .second__box {
+.main__about .box__about2 {
   width: 100%;
 }
 
 @media (min-width: 600px) {
-  .main__about .second__box {
+  .main__about .box__about2 {
     justify-content: center;
     align-items: center;
   }
 }
 
-.main__about .second__box .about__box {
+.main__about .box__about2 .about__box {
   padding: 5px;
 }
 
 @media (min-width: 600px) {
-  .main__about .second__box .about__box {
+  .main__about .box__about2 .about__box {
     width: calc(100% / 4);
     float: left;
     top: 0;
   }
 }
 
-.main__about .second__box .about__box i {
+.main__about .box__about2 .about__box i {
   font-size: 65px;
   padding: 15px 0px;
 }
 
-.main__about .second__box .about__box h3 {
+.main__about .box__about2 .about__box h3 {
   font-weight: 600;
   font-size: 20px;
   padding: 20px 0px;
 }
 
-.main__about .second__box .about__box p {
+.main__about .box__about2 .about__box p {
   font-weight: 600;
   font-size: 15px;
   padding-bottom: 20px;
