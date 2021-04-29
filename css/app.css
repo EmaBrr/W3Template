@@ -222,7 +222,7 @@ header a {
 
 @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (min-width: 720px) {
   .main__introduction .inside__boxcenter {
-    height: 88vh;
+    height: 500px;
   }
 }
 

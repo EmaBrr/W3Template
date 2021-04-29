@@ -119,7 +119,7 @@ header {
     justify-content: center;
     align-items: center;
     @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (min-width: $large){
-      height: 88vh;
+      height: 500px;
     }
     .inside__box {
       margin-top: 60px;
