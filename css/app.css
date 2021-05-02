@@ -599,3 +599,50 @@ header a {
 .main__team .box__teammain .box__team .btn button i {
   padding-right: 5px;
 }
+
+.main__achievements {
+  width: 100%;
+  display: inline-block;
+  background-color: #585656;
+  padding: 50px;
+}
+
+.main__achievements .box__achievements {
+  width: 95%;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+@media (min-width: 600px) {
+  .main__achievements .box__achievements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.main__achievements .box__achievements .achievement {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .main__achievements .box__achievements .achievement {
+    width: calc(100% / 4);
+  }
+}
+
+.main__achievements .box__achievements .achievement h2 {
+  font-size: 30px;
+  font-weight: 900;
+  color: whitesmoke;
+  padding: 10px 0px;
+  letter-spacing: 3px;
+}
+
+.main__achievements .box__achievements .achievement p {
+  font-size: 15px;
+  font-weight: 600;
+  color: whitesmoke;
+  padding: 10px 0px;
+  letter-spacing: 1px;
+}

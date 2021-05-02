@@ -393,3 +393,40 @@ header {
     }
   }
 }
+
+.main__achievements {
+  width: 100%;
+  display: inline-block;
+  background-color: rgb(88, 86, 86);
+  padding: 50px;
+  .box__achievements {
+    width: 95%;
+    text-align: center;
+    font-family: $raleway;
+    @media (min-width: $medium) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .achievement {
+      width: 100%;
+      @media (min-width: $medium) {
+        width: calc(100% / 4);
+      }
+      h2 {
+        font-size: 30px;
+        font-weight: 900;
+        color: whitesmoke;
+        padding: 10px 0px;
+        letter-spacing: 3px;
+      }
+      p {
+        font-size: 15px;
+        font-weight: 600;
+        color: whitesmoke;
+        padding: 10px 0px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
