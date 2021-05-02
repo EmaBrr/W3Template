@@ -382,6 +382,9 @@ header {
           background-color: rgb(236, 236, 236);
           border-radius: 3px;
           box-shadow: 10px grey;
+          &:hover{
+            background-color: rgb(199, 199, 199);
+          }
           @media (min-width: $extralarge) {
             width: 90%;
           }

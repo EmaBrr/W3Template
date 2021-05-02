@@ -590,6 +590,10 @@ header a {
   box-shadow: 10px grey;
 }
 
+.main__team .box__teammain .box__team .btn button:hover {
+  background-color: #c7c7c7;
+}
+
 @media (min-width: 990px) {
   .main__team .box__teammain .box__team .btn button {
     width: 90%;
