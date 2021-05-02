@@ -213,17 +213,17 @@ header a {
   background-color: black;
 }
 
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) and (min-width: 600px) {
+  .main__introduction {
+    height: 600px;
+  }
+}
+
 .main__introduction .inside__boxcenter {
   height: 93vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media (orientation: landscape) and (hover: none) and (pointer: coarse) and (min-width: 720px) {
-  .main__introduction .inside__boxcenter {
-    height: 500px;
-  }
 }
 
 .main__introduction .inside__boxcenter .inside__box {
@@ -243,12 +243,14 @@ header a {
   font-size: 40px;
   line-height: 65px;
   font-family: "Noto Sans JP", sans-serif;
+  display: inline-block;
 }
 
 @media (min-width: 600px) {
   .main__introduction .inside__boxcenter .inside__box h1 {
     font-size: 55px;
     padding: 20px 0px;
+    margin-top: 100px;
   }
 }
 
@@ -266,6 +268,7 @@ header a {
   font-size: 18px;
   letter-spacing: 1.5px;
   line-height: 30px;
+  display: inline-block;
 }
 
 @media (min-width: 600px) {
@@ -285,6 +288,7 @@ header a {
 .main__introduction .inside__boxcenter .inside__box .btn {
   width: 100%;
   padding: 35px 0px;
+  display: inline-block;
 }
 
 @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (min-width: 720px) {
@@ -317,6 +321,7 @@ header a {
 
 .main__introduction .icon__row {
   padding: 0px 0px 0px 30px;
+  display: inline-block;
 }
 
 @media (min-width: 600px) {
@@ -500,7 +505,15 @@ header a {
 
 .main__team .box__teammain {
   width: 100%;
+  display: inline-block;
   justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .main__team .box__teammain {
+    padding-left: 2%;
+  }
 }
 
 @media (min-width: 990px) {
@@ -508,6 +521,7 @@ header a {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 0%;
   }
 }
 
@@ -518,7 +532,7 @@ header a {
 
 @media (min-width: 600px) {
   .main__team .box__teammain .box__team {
-    width: 48.5%;
+    width: calc(95% / 2);
     float: left;
     margin: 5px 5px;
   }
@@ -526,13 +540,14 @@ header a {
 
 @media (min-width: 990px) {
   .main__team .box__teammain .box__team {
-    width: 23.5%;
+    width: calc(100% / 4);
     float: left;
   }
 }
 
 .main__team .box__teammain .box__team img {
   width: 100%;
+  filter: grayscale(60%);
 }
 
 .main__team .box__teammain .box__team h2 {
@@ -554,8 +569,15 @@ header a {
   line-height: 30px;
 }
 
-.main__team .box__teammain .box__team button {
-  width: 95%;
+.main__team .box__teammain .box__team .btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__team .box__teammain .box__team .btn button {
+  width: 94%;
   height: 30px;
   margin: 10px;
   background-color: #ececec;
@@ -564,11 +586,11 @@ header a {
 }
 
 @media (min-width: 990px) {
-  .main__team .box__teammain .box__team button {
+  .main__team .box__teammain .box__team .btn button {
     width: 90%;
   }
 }
 
-.main__team .box__teammain .box__team button i {
+.main__team .box__teammain .box__team .btn button i {
   padding-right: 5px;
 }

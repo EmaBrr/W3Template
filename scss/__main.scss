@@ -23,9 +23,6 @@ header {
       cursor: pointer;
       &:hover {
         background-color: rgb(190, 190, 190);
-        @media (max-width: $medium) {
-          // pointer-events: none;
-        }
       }
     }
     .nav {
@@ -55,9 +52,6 @@ header {
         }
         &:hover {
           background-color: rgb(190, 190, 190);
-          @media (max-width: $medium) {
-            // pointer-events: none;
-          }
         }
         i {
           color: black;
@@ -65,7 +59,6 @@ header {
         }
       }
       .hidden {
-        // display: none;
         @media (min-width: $medium) {
           display: inline-block;
         }
@@ -86,9 +79,6 @@ header {
       right: 0;
       &:hover {
         background-color: rgb(190, 190, 190);
-        @media (max-width: $medium) {
-          // pointer-events: none;
-        }
       }
       i {
         color: black;
@@ -113,14 +103,14 @@ header {
   background-size: cover;
   background-position: center;
   background-color: black;
+  @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (min-width: $medium) {
+    height: 600px;
+  }
   .inside__boxcenter {
     height: 93vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (min-width: $large) {
-      height: 500px;
-    }
     .inside__box {
       margin-top: 60px;
       width: 100%;
@@ -133,9 +123,11 @@ header {
         font-size: 40px;
         line-height: 65px;
         font-family: $noto;
+        display: inline-block;
         @media (min-width: $medium) {
           font-size: 55px;
           padding: 20px 0px;
+          margin-top: 100px;
         }
         @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (min-width: $large) {
           font-size: 45px;
@@ -149,6 +141,7 @@ header {
         font-size: 18px;
         letter-spacing: 1.5px;
         line-height: 30px;
+        display: inline-block;
         @media (min-width: $medium) {
           font-size: 25px;
           padding: 20px 0px;
@@ -161,6 +154,7 @@ header {
       .btn {
         width: 100%;
         padding: 35px 0px;
+        display: inline-block;
         @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (min-width: $large) {
           padding: 10px 0px;
         }
@@ -189,6 +183,7 @@ header {
   }
   .icon__row {
     padding: 0px 0px 0px 30px;
+    display: inline-block;
     @media (min-width: $medium) {
       padding: 0px 60px;
     }
@@ -200,9 +195,6 @@ header {
       &:hover {
         opacity: 0.8;
         padding: 3px;
-        @media (max-width: $medium) {
-          // pointer-events: none;
-        }
       }
       @media (min-width: $medium) {
         font-size: 22px;
@@ -332,26 +324,33 @@ header {
   }
   .box__teammain {
     width: 100%;
+    display: inline-block;
     justify-content: center;
+    align-items: center;
+    @media (min-width: $medium) {
+      padding-left: 2%;
+    }
     @media (min-width: $extralarge) {
       display: flex;
       justify-content: center;
       align-items: center;
+      padding-left: 0%;
     }
     .box__team {
       margin: 15px 0px;
       box-shadow: 3px 8px 25px rgba(104, 100, 100, 0.4);
       @media (min-width: $medium) {
-        width: 48.5%;
+        width: calc(95% / 2);
         float: left;
         margin: 5px 5px;
       }
       @media (min-width: $extralarge) {
-        width: 23.5%;
+        width: calc(100% / 4);
         float: left;
       }
       img {
         width: 100%;
+        filter: grayscale(60%);
       }
       h2 {
         text-align: left;
@@ -369,18 +368,24 @@ header {
         padding: 15px 10px;
         line-height: 30px;
       }
-      button {
-        width: 95%;
-        height: 30px;
-        margin: 10px;
-        background-color: rgb(236, 236, 236);
-        border-radius: 3px;
-        box-shadow: 10px grey;
-        @media (min-width: $extralarge) {
-          width: 90%;
-        }
-        i {
-          padding-right: 5px;
+      .btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+          width: 94%;
+          height: 30px;
+          margin: 10px;
+          background-color: rgb(236, 236, 236);
+          border-radius: 3px;
+          box-shadow: 10px grey;
+          @media (min-width: $extralarge) {
+            width: 90%;
+          }
+          i {
+            padding-right: 5px;
+          }
         }
       }
     }
