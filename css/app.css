@@ -474,7 +474,12 @@ header a {
 
 .main__weknowdesign .box__weknowdesign img {
   width: 100%;
-  padding: 10px;
+}
+
+@media (min-width: 600px) {
+  .main__weknowdesign .box__weknowdesign img {
+    padding: 10px;
+  }
 }
 
 .main__team {
