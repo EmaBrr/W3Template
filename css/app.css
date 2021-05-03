@@ -701,3 +701,76 @@ header a {
     padding: 3px 3px;
   }
 }
+
+.main__skills {
+  display: inline-block;
+  width: 100%;
+  background-color: #eeeeee;
+  font-family: "Noto Sans JP", sans-serif;
+  padding: 100px 50px;
+}
+
+.main__skills .box__skills1 {
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .main__skills .box__skills1 {
+    width: calc(100% / 2);
+    float: left;
+    padding-right: 20px;
+  }
+}
+
+.main__skills .box__skills1 h2 {
+  font-size: 30px;
+}
+
+.main__skills .box__skills1 p {
+  padding: 15px 0px;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.main__skills .box__skills2 {
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .main__skills .box__skills2 {
+    width: calc(100% / 2);
+    float: left;
+  }
+}
+
+.main__skills .box__skills2 p {
+  padding: 5px 0px;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.main__skills .box__skills2 i {
+  padding-right: 15px;
+}
+
+.main__skills .box__skills2 .graph__box {
+  width: 100%;
+  height: 60px;
+  padding: 10px 0px;
+}
+
+.main__skills .box__skills2 .graph__box .graph__full {
+  height: 25px;
+  width: 100%;
+  background-color: #b4b4b4;
+}
+
+.main__skills .box__skills2 .graph__box .graph__percentage {
+  height: 25px;
+  background-color: #585656;
+}
+
+.main__skills .box__skills2 .graph__box .graph__percentage p {
+  color: white;
+  text-align: center;
+}
