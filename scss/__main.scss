@@ -111,8 +111,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (min-width: $medium) {
+      height: 600px;
+    }
     .inside__box {
-      margin-top: 60px;
       width: 100%;
       padding: 0px 30px;
       @media (min-width: $medium) {
@@ -122,12 +124,14 @@ header {
         color: white;
         font-size: 40px;
         line-height: 65px;
+        width: 100%;
         font-family: $noto;
+        margin-top: 100px;
         display: inline-block;
         @media (min-width: $medium) {
           font-size: 55px;
           padding: 20px 0px;
-          margin-top: 100px;
+          margin-top: 0px;
         }
         @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (min-width: $large) {
           font-size: 45px;
@@ -139,6 +143,7 @@ header {
         font-family: $raleway;
         font-weight: 600;
         font-size: 18px;
+        width: 100%;
         letter-spacing: 1.5px;
         line-height: 30px;
         display: inline-block;
